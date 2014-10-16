@@ -102,9 +102,7 @@ tarteaucitron.services.addthis = {
     },
     "fallback": function () {
         "use strict";
-        var cookies = ['__atuvc'],
-            id = 'addthis';
-        
+        var cookies = ['__atuvc'],id = 'addthis';
         tarteaucitron.cookie.purge(cookies);
         tarteaucitron.fallback(['addthis_sharing_toolbox'], tarteaucitron.engage(id));
     }
@@ -190,7 +188,7 @@ tarteaucitron.services.analytics = {
     },
     "fallback": function () {
         "use strict";
-        var cookies = ['_ga', '_gat', '__utma', '__utmb', '__utmc', '__utmz'];
+        var cookies = ['_ga', '_gat', '__utma', '__utmb', '__utmc', '__utmz','__utmt'];
         tarteaucitron.cookie.purge(cookies);
     }
 };
@@ -259,4 +257,50 @@ tarteaucitron.services.twitter = {
         "use strict";
         tarteaucitron.fallback(['tacTwitter'], '<a href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + '%20' + encodeURIComponent(document.location) + '" target="_blank" class="tac_share tac_share_twitter">Twitter</a>');
     }
+};
+
+
+
+
+// Xiti
+tarteaucitron.services.xiti = {
+    "key": "xiti",
+    "type": "analytics",
+    "name": "Xiti",
+    "uri": "http://www.atinternet.com/",
+    "needConsent": true,
+    "js": function () {
+            "use strict";
+            if (tarteaucitron.user.xitiUid === undefined) {
+                return;
+            }
+            //tarteaucitron.fallback(['addthis_sharing_toolbox'], '');
+            tarteaucitron.addScript('http://logi7.xiti.com/hit.xiti?'+tarteaucitron.user.xitiUid+'&p=' + tarteaucitron.user.xitiParam);
+        },
+        "fallback": function () {
+            "use strict";
+            var cookies = ['idrxvr', 'tmst', 'xiti.com', 'xtan496844', 'xtant496844', 'xtvrn','ASP.NET_SessionId'],id = 'xiti';
+            tarteaucitron.cookie.purge(cookies);
+            //tarteaucitron.fallback(['addthis_sharing_toolbox'], tarteaucitron.engage(id));
+        }
+};
+
+// YouTube
+tarteaucitron.services.youtube = {
+    "key": "youtube",
+    "type": "social",
+    "name": "YouTube",
+    "uri": "",
+    "needConsent": true,
+    "js": function () {
+        "use strict";
+            
+
+        },
+        "fallback": function () {
+            "use strict";
+            var cookies = ['VISITOR_INFO1_LIVE', 'YSC', 'PREF', 'GEUP'],id = 'youtube';
+            tarteaucitron.cookie.purge(cookies);
+            //tarteaucitron.fallback(['addthis_sharing_toolbox'], tarteaucitron.engage(id));
+        }
 };

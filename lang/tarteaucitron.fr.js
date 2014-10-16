@@ -5,26 +5,26 @@ tarteaucitron.lang = {
     "personalize": "Personnaliser",
     "close": "Fermer",
 
-    "info": "Transparence sur les cookies",
-    "disclaimer": "En autorisant ces services tiers, vous acceptez le dépôt et la lecture de cookies et l'utilisation de technologies de suivi nécessaires à leur bon fonctionnement.",
+    "info": "En autorisant ces services tiers, vous acceptez le d&eacute;p&ocirc;t et la lecture de cookies </br>et l'utilisation de technologies de suivi n&eacute;cessaires &agrave; leur bon fonctionnement.",
+    "disclaimer": "Ce script a &eacute;t&eacute; cr&eacute;&eacute; par <a href='https://opt-out.ferank.eu/' target='_blanck'>Amauri CHAMPEAUX</a>, d&eacute;veloppeur web, et est publi&eacute; sous licence MIT.",
     "allow": "Autoriser",
     "deny": "Interdire",
     "more": "En savoir plus",
     "source": "Voir le site officiel",
-    "credit": "Gestion des cookies par tarteaucitron.js",
+    "credit": "",
     
-    "fallback": "est désactivé.",
+    "fallback": "est d&eacute;sactiv&eacute;.",
 
     "ads": {
-        "title": "Régies publicitaires",
-        "details": "Les régies publicitaires permettent de générer des revenus en commercialisant les espaces publicitaires du site."
+        "title": "R&eacute;gies publicitaires",
+        "details": "Les r&eacute;gies publicitaires permettent de g&eacute;n&eacute;rer des revenus en commercialisant les espaces publicitaires du site."
     },
     "analytics": {
         "title": "Mesure d'audience",
-        "details": "Les services de mesure d'audience permettent de générer des statistiques de fréquentation utiles à l'amélioration du site."
+        "details": "Les services de mesure d'audience permettent de g&eacute;n&eacute;rer des statistiques de fr&eacute;quentation utiles &agrave; l'am&eacute;lioration du site."
     },
     "social": {
-        "title": "Réseaux sociaux",
-        "details": "Les réseaux sociaux permettent d'améliorer la convivialité du site et aident à sa promotion via les partages."
+        "title": "R&eacute;seaux sociaux",
+        "details": "Les r&eacute;seaux sociaux permettent d'am&eacute;liorer la convivialit&eacute; du site et aident &agrave; sa promotion via les partages."
     }
 };

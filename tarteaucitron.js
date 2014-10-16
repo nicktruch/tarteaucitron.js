@@ -231,7 +231,7 @@ var tarteaucitron = {
         "color": function (key, status) {
             "use strict";
             var gray = '#808080',
-                greenDark = '#1B870B',
+                greenDark = '#7DB956',
                 greenLight = '#E6FFE2',
                 redDark = '#9C1A1A',
                 redLight = '#FFE2E2',
